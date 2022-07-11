@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Categories\CreateCategory.cshtml" />
+    <Content Remove="Pages\Categories\Delete.cshtml" />
+    <Content Remove="Pages\Categories\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.5.22302.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0-preview.5.22302.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0-preview.5.22302.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Categories\CreateCategory.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Categories\CreateCategory.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Categories\Delete.cshtml" />
+    <None Include="Pages\Categories\Edit.cshtml" />
+    <None Include="Pages\Categories\CreateCategory.cshtml" />
+    <None Include="wwwroot\lib\images\favicon.png" />
+    <None Include="wwwroot\lib\images\logo.png" />
+    <None Include="wwwroot\lib\images\logo_transparent.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿@page
+@model DeMozzWeb.Pages.Categories.DeleteModel
+
+<form method="post">
+    <input hidden asp-for="Category.Id" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-danger pl-3">Conform Deleting of this Category</h2>
+            <hr/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Category.Name"></label>
+            <input asp-for="@Model.Category.Name" disabled class="form-control"/>
+ 
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.Category.DisplayOrder"></label>
+            <input asp-for="@Model.Category.DisplayOrder" disabled class="form-control"/>
+        </div>
+        
+        <a asp-page="Index" class="btn btn-light" style="width:150px">cancel</a>
+        <button type="submit" class="btn btn-outline-danger mx-3" style="width:150px;">Delete</button>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
