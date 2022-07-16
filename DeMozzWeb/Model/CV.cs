@@ -7,20 +7,21 @@ namespace DeMozzWeb.Model
         [Key]
         public int Id { get; set; }
 
-        //[Required]
+        [Required]
         [StringLength(30)]
         [Display(Name = "First Name")]
         public string FN { get; set; }
 
-        //[Required]
+        [Required]
         [StringLength(30)]
         [Display(Name ="Last Name")]
         public string LN { get; set; }
 
-        //[Required]
-        public String Date{ get; set; }
+        [Required]
+        [Display(Name = "Date of Birth")]
+        public String DateOfBirth{ get; set; }
 
-        //[Required]
+        [Required]
         public string Nationality { get; set; }
 
         //[Required]
@@ -30,7 +31,7 @@ namespace DeMozzWeb.Model
         public string Skills { get; set; }
 
         [EmailAddress]
-        //[Required]
+        [Required]
         public string Email { get; set; }
   
         public string File { get; set; }
