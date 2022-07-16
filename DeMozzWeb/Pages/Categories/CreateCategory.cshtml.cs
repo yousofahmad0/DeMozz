@@ -23,6 +23,7 @@ namespace DeMozzWeb.Pages.Categories
             if(Category.Name == Category.DisplayOrder.ToString())
             {
                 ModelState.AddModelError("Category.Name","The Display Order cannot exactly match the Name.");
+
             }
             if (ModelState.IsValid)
             {

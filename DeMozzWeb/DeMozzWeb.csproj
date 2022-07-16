@@ -10,6 +10,8 @@
     <Content Remove="Pages\Categories\CreateCategory.cshtml" />
     <Content Remove="Pages\Categories\Delete.cshtml" />
     <Content Remove="Pages\Categories\Edit.cshtml" />
+    <Content Remove="Pages\CVs\Add.cshtml" />
+    <Content Remove="Pages\CVs\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,15 +30,27 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Pages\Categories\CreateCategory.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CVs\Add.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\CVs\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Pages\Categories\Delete.cshtml" />
     <None Include="Pages\Categories\Edit.cshtml" />
     <None Include="Pages\Categories\CreateCategory.cshtml" />
+    <None Include="Pages\CVs\Add.cshtml" />
+    <None Include="Pages\CVs\Index.cshtml" />
     <None Include="wwwroot\lib\images\favicon.png" />
     <None Include="wwwroot\lib\images\logo.png" />
     <None Include="wwwroot\lib\images\logo_transparent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\CVs\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\CVs\Add.cshtml" />
   </ItemGroup>
 
 </Project>

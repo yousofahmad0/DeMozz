@@ -1,0 +1,72 @@
+﻿@page
+@model DeMozzWeb.Pages.CVs.AddModel
+@{
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-danger pl-3">Create Category</h2>
+            <hr/>
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="CV.FN"></label>
+            <input asp-for="CV.FN" class="form-control"/>
+            <span asp-validation-for="CV.FN" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CV.LN"></label>
+            <input asp-for="CV.LN" class="form-control"/>
+            <span asp-validation-for="CV.LN"  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CV.Date"></label>
+            <input asp-for="CV.Date" type="date" class="form-control"/>
+            @*<span asp-validation-for="CV.Date"  class="text-danger"></span>*@
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="CV.Gender" style="padding-right:10px"></label>
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" />
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" />
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Others"/>
+              <label class="form-check-label" for="inlineRadio3">Others</label>
+            </div>
+
+            @*<span asp-validation-for="CV.Gender"  class="text-danger"></span>*@
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CV.Nationality"></label>
+            <select asp-for="CV.Nationality" asp-items="Model.Natio" class="form-select"></select>
+            <span asp-validation-for="CV.Nationality"  class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="CV.Email"></label>
+            <input asp-for="CV.Email" type="email" class="form-control"/>
+            @*<span asp-validation-for="CV.Email"  class="text-danger"></span>*@
+        </div>
+        
+        
+        <button type="submit" class="btn btn-outline-success" style="width:150px;">Create</button>
+        <a asp-page="Index" class="btn btn-light mx-3" style="width:150px">Back to List</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
