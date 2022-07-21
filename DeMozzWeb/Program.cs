@@ -1,4 +1,6 @@
 using DeMozzWeb.Data;
+using DeMozzWeb.ImageUploadService;
+using DeMozzWeb.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,9 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<DBConnection>(options=>options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
+
+builder.Services.AddTransient<GradeService>();
+builder.Services.AddScoped<IImageUploadService, LocalImageUploadService>();
 
 var app = builder.Build();
 

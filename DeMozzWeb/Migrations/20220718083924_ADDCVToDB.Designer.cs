@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DeMozzWeb.Migrations
 {
     [DbContext(typeof(DBConnection))]
-    [Migration("20220716114453_AddCVToDB")]
-    partial class AddCVToDB
+    [Migration("20220718083924_ADDCVToDB")]
+    partial class ADDCVToDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,6 +49,7 @@ namespace DeMozzWeb.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Gender")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Grade")

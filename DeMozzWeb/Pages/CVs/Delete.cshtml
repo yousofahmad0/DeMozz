@@ -1,0 +1,46 @@
+﻿@page
+@model DeMozzWeb.Pages.CVs.DeleteModel
+@{
+}
+
+<div class="container">
+<form method="post">
+    <input hidden asp-for="CV.Id" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-danger pl-3">Conform Deleting of this Resume</h2>
+            <hr/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CV.FN"></label>
+            <input asp-for="CV.FN" disabled class="form-control"/>
+ 
+        </div>
+        <div class="mb-3">
+            <label asp-for="CV.LN"></label>
+            <input asp-for="CV.LN" disabled class="form-control"/>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CV.Email"></label>
+            <input asp-for="CV.Email" disabled class="form-control"/>
+        </div>
+
+        <div>
+        @if (!string.IsNullOrWhiteSpace(@Model.CV.File))
+        {
+            <img src="@Model.CV.File" alt="Resume Image" width="100%" />
+        }
+
+        </div>
+        
+        <a asp-page="Index" class="btn btn-light" style="width:150px">cancel</a>
+        <button type="submit" class="btn btn-outline-danger mx-3" style="width:150px;">Delete</button>
+    </div>
+</form>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

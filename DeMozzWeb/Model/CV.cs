@@ -24,12 +24,13 @@ namespace DeMozzWeb.Model
         [Required]
         public string Nationality { get; set; }
 
-        //[Required]
+        [Required]
         //[RegularExpression("Male|Female|Others", ErrorMessage = "The Gender must be either 'Male', 'Female' or 'Others' only.")]
         public string Gender { get; set; }
 
         public string Skills { get; set; }
 
+        //[Key]
         [EmailAddress]
         [Required]
         public string Email { get; set; }

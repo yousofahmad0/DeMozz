@@ -1,0 +1,40 @@
+﻿@page
+@model DeMozzWeb.Pages.CVs.DetailsModel
+@{
+}
+
+<div class="container p-3">
+    <h1 class="text-warning">Details</h1>
+    <h3><span class="text-info">First Name:</span> @Model.CV.FN</h3>
+    <h3><span class="text-info">Last Name:</span> @Model.CV.LN</h3>
+    <h3><span class="text-info">Gender:</span> @Model.CV.Gender</h3>
+    <h3><span class="text-info">Date of Birth:</span> @Model.CV.DateOfBirth</h3>
+    <h3><span class="text-info">Email:</span> @Model.CV.Email</h3>
+    <h3><span class="text-info">Nationality:</span> @Model.CV.Nationality</h3>
+    <h3><span class="text-info">Skills:</span> 
+        @for (var i = 0; i < @Model.Skills.Count; i++)
+        {
+            if (i == @Model.Skills.Count -1)
+            {
+                string vv = @Model.Skills[i];
+                Write(vv);
+            }
+            else
+            {
+                string vv = @Model.Skills[i] + ", ";
+                Write(vv);
+            }
+            
+        }
+    </h3>
+    <h3><span class="text-info">Grade:</span> @Model.CV.Grade</h3>
+    <div>
+        @if (!string.IsNullOrWhiteSpace(@Model.CV.File))
+        {
+            <img src="@Model.CV.File" alt="Resume Image" width="100%" />
+        }
+
+    </div>
+</div>
+
+

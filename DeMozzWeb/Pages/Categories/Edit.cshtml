@@ -1,6 +1,7 @@
 ﻿@page
 @model DeMozzWeb.Pages.Categories.EditModel
 
+<div class="container">
 <form method="post">
     <input hidden asp-for="Category.Id" />
     <div class="border p-3 mt-4">
@@ -23,7 +24,7 @@
         <a asp-page="Index" class="btn btn-light mx-3" style="width:150px">Back to List</a>
     </div>
 </form>
-
+</div>
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial"/>

@@ -1,0 +1,106 @@
+﻿@page
+@model DeMozzWeb.Pages.CVs.EditModel
+@{
+}
+<div class="container">
+<form method="post">
+    <input hidden asp-for="CV.Id" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-danger pl-3">Edit Resume</h2>
+            <hr/>
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="CV.FN"></label>
+            <input asp-for="CV.FN" class="form-control"/>
+            <span asp-validation-for="CV.FN" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="CV.LN"></label>
+            <input asp-for="CV.LN" class="form-control"/>
+            <span asp-validation-for="CV.LN"  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CV.DateOfBirth"></label>
+            <input asp-for="CV.DateOfBirth" type="date" class="form-control"/>
+            <span asp-validation-for="CV.DateOfBirth"  class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3">
+            <input hidden asp-for="@Model.x"/>
+            <input hidden asp-for="@Model.y"/>
+            <input hidden asp-for="@Model.v"/>
+
+
+            <label asp-for="CV.Gender" style="padding-right:10px"></label>
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Male" />
+              <label class="form-check-label">Male</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Female" />
+              <label class="form-check-label">Female</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Others"/>
+              <label class="form-check-label">Others</label>
+            </div>
+
+            <span asp-validation-for="CV.Gender"  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CV.Nationality"></label>
+            <select asp-for="CV.Nationality" asp-items="Model.Natio" class="form-select"></select>
+            <span asp-validation-for="CV.Nationality"  class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3">
+            <label asp-for="CV.Email"></label>
+            <input asp-for="CV.Email" type="email" class="form-control"/>
+            <span asp-validation-for="CV.Email"  class="text-danger"></span>
+        </div>
+        
+        <label asp-for="CV.Skills"></label><br />
+        <div class="form-check mb-3">
+            @foreach (var sk in @Model.skills)
+            {
+                @if (@Model.CheckedBe4.Contains(sk)){
+                    <input class="form-check-input" name="CheckedSkills" type="checkbox" value="@sk" checked/>
+                    <label class="form-check-label">@sk</label><br />
+                }    
+                else{
+                    <input class="form-check-input" name="CheckedSkills" type="checkbox" value="@sk"/>
+                    <label class="form-check-label">@sk</label><br />
+                }
+            }
+        </div>
+
+        <div class="mb-3">
+            <label>Sum Validation</label>
+            <input asp-for="sum" type="number" class="form-control" placeholder="@Model.x + @Model.y" value=""/>
+
+            @*<script>
+            function myFunction() {
+              document.getElementById("sum").placeholder = "@Model.x + @Model.y";
+            }
+            </script>*@
+        </div>
+        
+        
+        
+        <button type="submit" class="btn btn-outline-success" style="width:150px;">Update</button>
+        <a asp-page="Index" class="btn btn-light mx-3" style="width:150px">Back to List</a>
+    </div>
+</form>
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
