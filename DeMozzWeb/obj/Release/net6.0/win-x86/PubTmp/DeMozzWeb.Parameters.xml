@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="DeMozz" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\user\\Desktop\\projects\\asp\ project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\Release\\net6\.0\\win-x86\\PubTmp\\Out\\$" />
+  <parameter name="IIS Web Application Name" description="" value="DeMozzWeb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp\ project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\Release\\net6\.0\\win-x86\\PubTmp\\Out\\$" />
   </parameter>
-  <parameter name="DeMozzWeb.Data.DBConnection" description="" value="Data Source=tcp:demozzserver.database.windows.net,1433;Initial Catalog=DeMozz_db;User Id=adminDemozz@demozzserver;Password=aPNSvc7HQL7pUVn" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\user\\Desktop\\projects\\asp\ project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\Release\\net6\.0\\win-x86\\PubTmp\\EFSQLScripts\\DeMozzWeb\.Data\.DBConnection\.sql$" />
+  <parameter name="DeMozzWeb.Data.AuthDBContext" description="" value="Data Source=tcp:demozserver.database.windows.net,1433;Initial Catalog=DeMozz_db;User Id=deadmin@demozserver;Password=Helloadmin@" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp\ project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\Release\\net6\.0\\win-x86\\PubTmp\\EFSQLScripts\\DeMozzWeb\.Data\.AuthDBContext\.sql$" />
+  </parameter>
+  <parameter name="DeMozzWeb.Data.DBConnection" description="" value="Data Source=tcp:demozserver.database.windows.net,1433;Initial Catalog=DeMozz_db;User Id=deadmin@demozserver;Password=Helloadmin@" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp\ project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\Release\\net6\.0\\win-x86\\PubTmp\\EFSQLScripts\\DeMozzWeb\.Data\.DBConnection\.sql$" />
   </parameter>
 </parameters>

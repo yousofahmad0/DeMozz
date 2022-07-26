@@ -1,10 +1,12 @@
 using DeMozzWeb.Data;
 using DeMozzWeb.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DeMozzWeb.Pages.CVs
 {
+    [Authorize]
     public class DeleteModel : PageModel
     {
         private readonly DBConnection _db;
@@ -25,9 +27,13 @@ namespace DeMozzWeb.Pages.CVs
             var CVToDel = _db.CV.Find(CV.Id);
             if (CVToDel != null)
             {
-                string path = ".\\wwwroot"+CVToDel.File;
-                FileInfo im = new FileInfo(path);
-                im.Delete();
+                if (!string.IsNullOrWhiteSpace(CVToDel.File))
+                {
+                    string path = ".\\wwwroot" + CVToDel.File;
+                    FileInfo im = new FileInfo(path);
+                    im.Delete();
+                }
+                
 
                 _db.Remove(CVToDel);
                 await _db.SaveChangesAsync();

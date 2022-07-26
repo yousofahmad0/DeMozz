@@ -1,15 +1,27 @@
 using DeMozzWeb.Data;
 using DeMozzWeb.ImageUploadService;
 using DeMozzWeb.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+builder.Services.AddDbContext<AuthDBContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("DefaultConnection")
+    ));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AuthDBContext>();
+
+builder.Services.ConfigureApplicationCookie(config =>
+{
+    config.LoginPath = "/Login";
+});
+
 builder.Services.AddDbContext<DBConnection>(options=>options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
+
 
 builder.Services.AddTransient<GradeService>();
 builder.Services.AddScoped<IImageUploadService, LocalImageUploadService>();
@@ -28,6 +40,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8HSu44pBk0Rgof8ftrSlgII86OBS2uT7L2/3WPhqQVQ=",
+  "Hash": "FvAvzTgp5Ff4GSBmBVVV8OVpnUnfhgBnkvhI7Hph8b0=",
   "Source": "DeMozzWeb",
   "BasePath": "_content/DeMozzWeb",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\css\\StyleSheet.css",
-      "SourceId": "DeMozzWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\",
-      "BasePath": "_content/DeMozzWeb",
-      "RelativePath": "css/StyleSheet.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\css\\StyleSheetBoom.css",
@@ -1256,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\ResumeImages\\Resume -Yousef Ahmad.pdf",
+      "SourceId": "DeMozzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\",
+      "BasePath": "_content/DeMozzWeb",
+      "RelativePath": "ResumeImages/Resume -Yousef Ahmad.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ResumeImages\\Resume -Yousef Ahmad.pdf"
     }
   ]
 }

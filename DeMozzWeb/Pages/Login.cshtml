@@ -1,0 +1,33 @@
+﻿@page
+@model DeMozzWeb.Pages.LoginModel
+@{
+}
+
+<div class="container pt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <h1 class="mb-3">Login</h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Login.Username"></label>
+                    <input asp-for="Login.Username" class="form-control"/>
+                    <span asp-validation-for="Login.Username" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Login.Password"></label>
+                    <input asp-for="Login.Password" class="form-control"/>
+                    <span asp-validation-for="Login.Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" asp-for="Login.RememberMe" class="form-check-input"/>
+                    <label class="form-check-label" asp-for="Login.RememberMe">Remember Me?</label>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-info">Login</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

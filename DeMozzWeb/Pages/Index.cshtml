@@ -2,10 +2,11 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var username =" " + User.Identity.Name;
 }
 
 <div class="container">
-    <h1 class="display-4" style="text-align:center">Welcome to DeMozz</h1>
+    <h1 class="display-4" style="text-align:center">Welcome @username</h1>
 
    
     <div class="row" style="margin-top:30px">

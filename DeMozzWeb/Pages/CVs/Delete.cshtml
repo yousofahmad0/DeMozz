@@ -26,7 +26,7 @@
             <input asp-for="CV.Email" disabled class="form-control"/>
         </div>
 
-        <div>
+        <div class="mb-2">
         @if (!string.IsNullOrWhiteSpace(@Model.CV.File))
         {
             <img src="@Model.CV.File" alt="Resume Image" width="100%" />

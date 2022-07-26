@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/Yb5HnqHkiv7KJh/ustKwAAAAACAAAAAAAQZgAAAAEAACAAAAAoYngGGwjxwH1ioxqWyQUzYGvrlq8biNu0iG3JSBxKlgAAAAAOgAAAAAIAACAAAABPc8oIDtsGm+bZ9huT5/HStxPv9jn+Rj04JU3CcaS8D4AAAADnwKIVaJSuGwDg01mGCul1TPkdE88xR4c/J+2spU+mhAD8aFmh6M1DtjxakJtCsuz3AhsKLCsZIeyEzjoPzEO0bKYFfQZpaVW0W87QXrZ4oRnCFZnguDzkKcNBuOq0G4RjnOAzcDdG1BCD3qXI7NGIlgY3YQ73Hp/PP4C1YnTaaEAAAADEYjA5BNXVkGEB6uKVkTsY8kT+fjBsT6VDfjSakV5PgN2iR/fnBi8rsPfwe+oxe9plNTiZfH9f4rnJjSrGnOm0</EncryptedPassword>
+    <History>True|2022-07-26T21:09:34.6843475Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DeMozzWeb.Data.AuthDBContext">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </EFMigrations>
+    <EFMigrations Include="DeMozzWeb.Data.DBConnection">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

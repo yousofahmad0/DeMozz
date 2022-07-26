@@ -1,0 +1,18 @@
+﻿@page
+@model DeMozzWeb.Pages.LogoutModel
+@{
+}
+<form method="post">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h4>Are you sure you want to logout?</h4>
+                <p>
+                    <button asp-page-handler="Logout" class="btn btn-outline-danger mx-5">Yes</button>
+                    <button asp-page-handler="DontLogout" class="btn btn-light">No</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</form>

@@ -10,15 +10,17 @@ namespace DeMozzWeb.Services
         {
             _config = config;
         }
-        public int CalculateGrade(CV cV, List<string> skills)
+        public int CalculateGrade(string Gender, List<string> skills)
         {
             int grade = 0;
             grade += skills.Count * 10;
-            if(cV.Gender == "Female")
+            
+            
+            if(Gender == "Female")
             {
                 grade += 10;
             }
-            else if(cV.Gender == "Male")
+            else if(Gender == "Male")
             {
                 grade += 5;
             }

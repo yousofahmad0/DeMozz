@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAD/Yb5HnqHkiv7KJh/ustKwAAAAACAAAAAAAQZgAAAAEAACAAAACUl/qN/6ItG2wg2QNJnv12zk7OnHF52fHEMgOhs1j7UQAAAAAOgAAAAAIAACAAAABaqvsTdOQvpy0eId1U4Qv/0liIGWiEZTAtRrNunXsG7YAAAADy+VLYWtfMmbRg7MG4ZexRVJep8C+GuHcfshG1N2K8IZSiDZO30BVg8zn2gS0noyqef/KB9piO1HqbByqbykMqU9LufuU89tINEtPGcKnDpHhjmfPydELla6YgO4gBHKEFfasbuhnF4z63P+mh9/jNmdzpl0KMjvq9j/PzDyTWgEAAAAAaGLl7NHSQ5v5MqyvlXQsMLorUa5kah/mZovVNhNI3sqyCq+LATnj2PVmqQj3+VbMU3h7LUf5KWcMb+SgEELk/</EncryptedPassword>
+    <History>True|2022-07-26T20:56:41.0839821Z;True|2022-07-26T23:54:44.1513816+03:00;True|2022-07-26T23:35:56.1057819+03:00;False|2022-07-26T23:29:13.7195748+03:00;False|2022-07-26T23:22:11.4136203+03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="DeMozzWeb.Data.AuthDBContext">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </EFMigrations>
+    <EFMigrations Include="DeMozzWeb.Data.DBConnection">
+      <Value>Data Source=tcp:demozserver.database.windows.net,1433%3bInitial Catalog=DeMozz_db%3bUser Id=deadmin%40demozserver%3bPassword=Helloadmin%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

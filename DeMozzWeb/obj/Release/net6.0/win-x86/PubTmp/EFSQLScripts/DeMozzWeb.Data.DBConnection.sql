@@ -32,3 +32,34 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220718083924_ADDCVToDB')
+BEGIN
+    CREATE TABLE [CV] (
+        [Id] int NOT NULL IDENTITY,
+        [FN] nvarchar(30) NOT NULL,
+        [LN] nvarchar(30) NOT NULL,
+        [DateOfBirth] nvarchar(max) NOT NULL,
+        [Nationality] nvarchar(max) NOT NULL,
+        [Gender] nvarchar(max) NOT NULL,
+        [Skills] nvarchar(max) NULL,
+        [Email] nvarchar(max) NOT NULL,
+        [File] nvarchar(max) NULL,
+        [Grade] int NOT NULL,
+        CONSTRAINT [PK_CV] PRIMARY KEY ([Id])
+    );
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20220718083924_ADDCVToDB')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20220718083924_ADDCVToDB', N'7.0.0-preview.5.22302.2');
+END;
+GO
+
+COMMIT;
+GO
+

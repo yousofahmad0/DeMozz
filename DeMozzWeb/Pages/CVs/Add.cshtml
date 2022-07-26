@@ -1,6 +1,7 @@
 ﻿@page
 @model DeMozzWeb.Pages.CVs.AddModel
 @{
+ 
 }
 <div class="container">
 <form method="post" enctype="multipart/form-data">
@@ -11,20 +12,20 @@
         </div>
         <div asp-validation-summary="All"></div>
         <div class="mb-3">
-            <label asp-for="CV.FN"></label>
-            <input asp-for="CV.FN" class="form-control"/>
-            <span asp-validation-for="CV.FN" class="text-danger"></span>
+            <label asp-for="Input.FN"></label>
+            <input asp-for="Input.FN" class="form-control"/>
+            <span asp-validation-for="Input.FN" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="CV.LN"></label>
-            <input asp-for="CV.LN" class="form-control"/>
-            <span asp-validation-for="CV.LN"  class="text-danger"></span>
+            <label asp-for="Input.LN"></label>
+            <input asp-for="Input.LN" class="form-control"/>
+            <span asp-validation-for="Input.LN"  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="CV.DateOfBirth"></label>
-            <input asp-for="CV.DateOfBirth" type="date" class="form-control"/>
-            <span asp-validation-for="CV.DateOfBirth"  class="text-danger"></span>
+            <label asp-for="Input.DateOfBirth"></label>
+            <input asp-for="Input.DateOfBirth" type="date" class="form-control"/>
+            <span asp-validation-for="Input.DateOfBirth"  class="text-danger"></span>
         </div>
         
         <div class="mb-3">
@@ -33,44 +34,46 @@
             <input hidden asp-for="@Model.v"/>
 
 
-            <label asp-for="CV.Gender" style="padding-right:10px"></label>
+            <label asp-for="Input.Gender" style="padding-right:10px"></label>
             <div class="form-check form-check-inline">
-              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Male" />
+              <input asp-for="Input.Gender" class="form-check-input" type="radio" value="Male" />
               <label class="form-check-label">Male</label>
             </div>
             
             <div class="form-check form-check-inline">
-              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Female" />
+              <input asp-for="Input.Gender" class="form-check-input" type="radio" value="Female" />
               <label class="form-check-label">Female</label>
             </div>
             
             <div class="form-check form-check-inline">
-              <input asp-for="CV.Gender" class="form-check-input" type="radio" value="Others"/>
+              <input asp-for="Input.Gender" class="form-check-input" type="radio" value="Others"/>
               <label class="form-check-label">Others</label>
             </div>
 
-            <span asp-validation-for="CV.Gender"  class="text-danger"></span>
+            <span asp-validation-for="Input.Gender"  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="CV.Nationality"></label>
-            <select asp-for="CV.Nationality" asp-items="Model.Natio" class="form-select"></select>
-            <span asp-validation-for="CV.Nationality"  class="text-danger"></span>
+            <label asp-for="Input.Nationality"></label>
+            <select asp-for="Input.Nationality"  class="form-select" asp-items="@(new SelectList(Model.nationality,"Name","Name"))">
+              <option value="" selected disabled>---Select your Nationality---</option>
+            </select>
+            <span asp-validation-for="Input.Nationality"  class="text-danger"></span>
         </div>
         
         <div class="mb-3">
-            <label asp-for="CV.Email"></label>
-            <input asp-for="CV.Email" class="form-control"/>
-            <span asp-validation-for="CV.Email"  class="text-danger"></span>
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email" class="form-control"/>
+            <span asp-validation-for="Input.Email"  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="ConfirmEmail"></label>
-            <input asp-for="ConfirmEmail" class="form-control"/>
-            <span asp-validation-for="ConfirmEmail"  class="text-danger"></span>
+            <label asp-for="Input.ConfirmEmail"></label>
+            <input asp-for="Input.ConfirmEmail" class="form-control"/>
+            <span asp-validation-for="Input.ConfirmEmail"  class="text-danger"></span>
         </div>
         
-        <label asp-for="CV.Skills"></label><br />
+        <label asp-for="Input.Skills"></label><br />
         <div class="form-check mb-3">
             @foreach (var sk in @Model.skills)
             {
@@ -82,12 +85,17 @@
         <div class="mb-3">
             <label class="form-label">Upload your Resume</label>
             <input type="file"  name="Im" class="form-control"/>
-            <span asp-validation-for="CV.File"  class="text-danger"></span>
+            <span asp-validation-for="Input.File"  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label>Sum Validation</label>
-            <input asp-for="sum" type="number" class="form-control" placeholder="@Model.x + @Model.y" value=""/>
+            <label>Sum Validation (@Model.x + @Model.y)</label>
+            @if(@Model.sum == 0){
+                <input asp-for="sum" type="number" class="form-control" placeholder="@Model.x + @Model.y" value=""/>
+            }else{
+                <input asp-for="sum" type="number" class="form-control" placeholder="@Model.x + @Model.y" value="@Model.sum"/>
+            }
+            
 
             @*<script>
             function myFunction() {
@@ -107,6 +115,6 @@
 </div>
 @section Scripts{
     @{
-        <partial name="_ValidationScriptsPartial"/>
+    <partial name="_ValidationScriptsPartial"/>
     }
 }

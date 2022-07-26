@@ -1,26 +1,20 @@
 using DeMozzWeb.Data;
 using DeMozzWeb.Model;
 using DeMozzWeb.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DeMozzWeb.Pages.CVs
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly DBConnection _db;
         private readonly GradeService GD;
 
-        public IEnumerable<SelectListItem> Natio { get; set; }
-            = new List<SelectListItem>()
-            {
-                new SelectListItem{Value= "Lebanon", Text="Lebanon"},
-                new SelectListItem{Value= "Palastine", Text="Palastine"},
-                new SelectListItem{Value= "Japanese", Text="Japanese"},
-                new SelectListItem{Value= "USA", Text="USA"},
-                new SelectListItem{Value= "UK", Text="UK"}
-            };
+        public IEnumerable<Nationality> nationality { get; set; }
 
         public List<string> skills { get; set; }
             = new List<string>()
@@ -57,7 +51,7 @@ namespace DeMozzWeb.Pages.CVs
 
         public void OnGet(int id)
         {
-              
+            nationality = _db.Nationality.ToList();
             CV = _db.CV.Find(id);
             CheckedBe4 = CV.Skills.Split(',').ToList();
 
@@ -78,7 +72,7 @@ namespace DeMozzWeb.Pages.CVs
 
             if (ModelState.IsValid)
             {
-                CV.Grade = GD.CalculateGrade(CV, CheckedSkills);
+                CV.Grade = GD.CalculateGrade(CV.Gender, CheckedSkills);
                 CV.Skills = GD.GenerateSkills(CheckedSkills);
                 _db.CV.Update(CV);
                 await _db.SaveChangesAsync();

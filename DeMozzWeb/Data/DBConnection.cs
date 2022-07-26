@@ -10,5 +10,7 @@ namespace DeMozzWeb.Data
 
         public DbSet<CV> CV { get; set; }
 
+        public DbSet<Nationality> Nationality { get; set; }
+
     }
 }

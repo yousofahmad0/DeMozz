@@ -55,7 +55,9 @@
 
         <div class="mb-3">
             <label asp-for="CV.Nationality"></label>
-            <select asp-for="CV.Nationality" asp-items="Model.Natio" class="form-select"></select>
+            <select asp-for="CV.Nationality"  class="form-select" asp-items="@(new SelectList(Model.nationality,"Name","Name"))">
+              <option value="" selected disabled>---Select your Nationality---</option>
+            </select>
             <span asp-validation-for="CV.Nationality"  class="text-danger"></span>
         </div>
         

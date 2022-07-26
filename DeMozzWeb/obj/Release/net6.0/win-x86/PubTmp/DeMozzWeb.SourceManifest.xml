@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\user\Desktop\projects\asp project\DeMozz\DeMozz\DeMozzWeb\obj\Release\net6.0\win-x86\PubTmp\Out\" />
-  <dbfullsql path="C:\Users\user\Desktop\projects\asp project\DeMozz\DeMozz\DeMozzWeb\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\DeMozzWeb.Data.DBConnection.sql" />
+  <IisApp path="C:\Users\youso\OneDrive\Desktop\projects\asp project\DeMozz\DeMozz\DeMozzWeb\obj\Release\net6.0\win-x86\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\youso\OneDrive\Desktop\projects\asp project\DeMozz\DeMozz\DeMozzWeb\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\DeMozzWeb.Data.AuthDBContext.sql" />
+  <dbfullsql path="C:\Users\youso\OneDrive\Desktop\projects\asp project\DeMozz\DeMozz\DeMozzWeb\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\DeMozzWeb.Data.DBConnection.sql" />
 </sitemanifest>
