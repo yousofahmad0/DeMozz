@@ -790,6 +790,38 @@
           }
         }
       },
+      "Syncfusion.Compression.Net.Core/20.2.0.40": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/20.2.0.40": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Pdf.Net.Core/20.2.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "20.2.0.40",
+          "Syncfusion.Licensing": "20.2.0.40",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.Pdf.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Pdf.Portable.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -2513,6 +2545,81 @@
         "select.htmltopdf.netcore.nuspec"
       ]
     },
+    "Syncfusion.Compression.Net.Core/20.2.0.40": {
+      "sha512": "7lM9W7UngaOX/6ux8LxHx97Xr9EziQ1I4Duxlx8mbXbWI08TmhSz+/PLOaeMkJtFfjWLIR66NNOlgJf3XgiVGA==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/20.2.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0/Syncfusion.Compression.Portable.dll",
+        "lib/net6.0/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.20.2.0.40.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/20.2.0.40": {
+      "sha512": "+JLKLk0xCvAVGsb/O1ocJiiEmYwIxn2cpmGf5pNZoZCW4c1GwTNANnoSQZXkcbNz/9FvtQZ/1Fhh7qbjgZuZeQ==",
+      "type": "package",
+      "path": "syncfusion.licensing/20.2.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.20.2.0.40.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Pdf.Net.Core/20.2.0.40": {
+      "sha512": "q/1EchbUS6uHwzs8MDypgok9brLDNmwjx/+uvNCEojxBm17nF2bTiX/eMxR5shH42L36hORJls3xtZp2U+5X7w==",
+      "type": "package",
+      "path": "syncfusion.pdf.net.core/20.2.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0/Syncfusion.Pdf.Portable.dll",
+        "lib/net6.0/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard1.2/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard1.2/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard1.4/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard1.4/Syncfusion.Pdf.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Pdf.Portable.xml",
+        "syncfusion.pdf.net.core.20.2.0.40.nupkg.sha512",
+        "syncfusion.pdf.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -3918,7 +4025,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.0-preview.5.22302.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0-preview.5.22302.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0-preview.5.22302.2",
-      "Select.HtmlToPdf.NetCore >= 22.1.0"
+      "Select.HtmlToPdf.NetCore >= 22.1.0",
+      "Syncfusion.Pdf.Net.Core >= 20.2.0.40"
     ]
   },
   "packageFolders": {
@@ -3985,6 +4093,10 @@
           "Select.HtmlToPdf.NetCore": {
             "target": "Package",
             "version": "[22.1.0, )"
+          },
+          "Syncfusion.Pdf.Net.Core": {
+            "target": "Package",
+            "version": "[20.2.0.40, )"
           }
         },
         "imports": [

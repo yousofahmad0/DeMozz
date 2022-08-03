@@ -65,6 +65,10 @@
             "Select.HtmlToPdf.NetCore": {
               "target": "Package",
               "version": "[22.1.0, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[20.2.0.40, )"
             }
           },
           "imports": [

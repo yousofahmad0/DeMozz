@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FvAvzTgp5Ff4GSBmBVVV8OVpnUnfhgBnkvhI7Hph8b0=",
+  "Hash": "xhajpgPIj/ZoK3NO3UzQNzPZ2hUcySbMAIToPiHAnZ0=",
   "Source": "DeMozzWeb",
   "BasePath": "_content/DeMozzWeb",
   "Mode": "Default",
@@ -1241,12 +1241,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\ResumeImages\\Resume -Yousef Ahmad.pdf",
+      "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\ResumeImages\\WebbPic.jpg",
       "SourceId": "DeMozzWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\",
       "BasePath": "_content/DeMozzWeb",
-      "RelativePath": "ResumeImages/Resume -Yousef Ahmad.pdf",
+      "RelativePath": "ResumeImages/WebbPic.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1255,7 +1255,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ResumeImages\\Resume -Yousef Ahmad.pdf"
+      "OriginalItemSpec": "wwwroot\\ResumeImages\\WebbPic.jpg"
     }
   ]
 }

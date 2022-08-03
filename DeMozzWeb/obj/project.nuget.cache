@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mYrCQoyWL3HePgouyIhYVejWCUiNT5qrdwDfoJUYQsBTZ0iw8pbkpl5h17q8WqlVGP8T1F+e8MqSFTHcwJcUAA==",
+  "dgSpecHash": "VdL3mfQADx4ao/ned2GXuIPzRfG5C2OkUQIB11qNoxRCFAjpGwe3FSNBt8VkNBqblYfLdqKdcElbxIRQFlaONw==",
   "success": true,
   "projectFilePath": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,9 @@
     "C:\\Users\\youso\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\youso\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\youso\\.nuget\\packages\\select.htmltopdf.netcore\\22.1.0\\select.htmltopdf.netcore.22.1.0.nupkg.sha512",
+    "C:\\Users\\youso\\.nuget\\packages\\syncfusion.compression.net.core\\20.2.0.40\\syncfusion.compression.net.core.20.2.0.40.nupkg.sha512",
+    "C:\\Users\\youso\\.nuget\\packages\\syncfusion.licensing\\20.2.0.40\\syncfusion.licensing.20.2.0.40.nupkg.sha512",
+    "C:\\Users\\youso\\.nuget\\packages\\syncfusion.pdf.net.core\\20.2.0.40\\syncfusion.pdf.net.core.20.2.0.40.nupkg.sha512",
     "C:\\Users\\youso\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\youso\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\youso\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
