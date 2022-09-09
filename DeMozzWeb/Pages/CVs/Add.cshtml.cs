@@ -31,13 +31,6 @@ namespace DeMozzWeb.Pages.CVs
                 "C#"
             };
 
-        //[BindProperty]
-        //public CV CV { get; set; }
-
-        //[BindProperty]
-        //[EmailAddress]
-        //[Display(Name = "Confirm Email")]
-        //public string ConfirmEmail { get; set; }
 
         [BindProperty]
         public InputModel Input { get; set; }

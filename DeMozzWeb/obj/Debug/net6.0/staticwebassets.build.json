@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xhajpgPIj/ZoK3NO3UzQNzPZ2hUcySbMAIToPiHAnZ0=",
+  "Hash": "n9Rjnnws5Jls2tIFtHWtMXxc6vZURPA+PFWlo3VsclM=",
   "Source": "DeMozzWeb",
   "BasePath": "_content/DeMozzWeb",
   "Mode": "Default",
@@ -1256,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ResumeImages\\WebbPic.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\ResumeImages\\WhatsApp Image 2022-07-12 at 3.35.05 PM.jpeg",
+      "SourceId": "DeMozzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\wwwroot\\",
+      "BasePath": "_content/DeMozzWeb",
+      "RelativePath": "ResumeImages/WhatsApp Image 2022-07-12 at 3.35.05 PM.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ResumeImages\\WhatsApp Image 2022-07-12 at 3.35.05 PM.jpeg"
     }
   ]
 }

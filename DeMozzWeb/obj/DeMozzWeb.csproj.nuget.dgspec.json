@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj": {}
+    "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp projects\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj": {
+    "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp projects\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj",
+        "projectUniqueName": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp projects\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj",
         "projectName": "DeMozzWeb",
-        "projectPath": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj",
+        "projectPath": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp projects\\DeMozz\\DeMozz\\DeMozzWeb\\DeMozzWeb.csproj",
         "packagesPath": "C:\\Users\\youso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp project\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\",
+        "outputPath": "C:\\Users\\youso\\OneDrive\\Desktop\\projects\\asp projects\\DeMozz\\DeMozz\\DeMozzWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\youso\\AppData\\Roaming\\NuGet\\NuGet.Config",
