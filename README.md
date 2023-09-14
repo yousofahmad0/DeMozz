@@ -1,5 +1,7 @@
 "# DeMozz" 
 
+Demozz is a specialized website designed for the seamless sharing of resumes. It offers administrative capabilities, enabling administrators to efficiently navigate through all the submitted resumes and download PDF samples of specific resumes as needed.
+
 ![1](https://user-images.githubusercontent.com/104697889/189718249-eed5c365-585e-4472-baa2-1a904a51d122.PNG)
 ![2](https://user-images.githubusercontent.com/104697889/189718371-8b11b70c-890c-4b39-b443-b6d1b54f7b1a.PNG)
 ![3](https://user-images.githubusercontent.com/104697889/189718453-608ebe9a-245f-480e-8b04-fd3e0028bec8.PNG)
